@@ -1,15 +1,18 @@
-let sheetId = '1CgfU3P2hKVxVyFHtAKKM53TR2S97A4C2ocUF-v8w6Z4';
+
+let sheetId = 1CgfU3P2hKVxVyFHtAKKM53TR2S97A4C2ocUF-v8w6Z4;
 let sheetName = 'FINGERPRINTING';
-let accessToken = D:\MTP\Prototype\clear-booking-414301-a8b1c109d284.json;
+let clientId = 'YOUR_OAUTH_CLIENT_ID'; // Replace with your OAuth client ID
 
 function init() {
     gapi.client.init({
-        apiKey: accessToken,
+        clientId: clientId,
         discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+        scope: "https://www.googleapis.com/auth/spreadsheets"
     }).then(function() {
         collectDataBtn.disabled = false;
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const collectDataBtn = document.getElementById('collectDataBtn');
