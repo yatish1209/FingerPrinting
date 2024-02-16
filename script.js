@@ -1,7 +1,7 @@
 
-let sheetId = 1CgfU3P2hKVxVyFHtAKKM53TR2S97A4C2ocUF-v8w6Z4;
-let sheetName = FINGERPRINTING;
-let clientId = 556195817456-cur82amnhtd7sb535s822pvcp0hnpbue.apps.googleusercontent.com; // Replace with your OAuth client ID
+let sheetId = '1CgfU3P2hKVxVyFHtAKKM53TR2S97A4C2ocUF-v8w6Z4';
+let sheetName = 'FINGERPRINTING';
+let clientId = '556195817456-cur82amnhtd7sb535s822pvcp0hnpbue.apps.googleusercontent.com'; // Replace with your OAuth client ID
 
 function init() {
     gapi.client.init({
